@@ -4,4 +4,4 @@
  - - - - -
 ### 230907 font_textEx 업로드 ###
 
-file:///C:/sye/css/230907/font-textEx.html
+[Named Link](file:///C:/sye/css/230907/font-textEx.html)
