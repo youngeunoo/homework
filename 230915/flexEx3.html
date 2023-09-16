@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <title>flexEx3</title>
+   <style>
+      body { font-weight: bold; margin: 0;}
+      .wrapper .header {
+         background-color: rgb(172, 121, 255);
+         height: 70px; width: 100%;
+      }
+      .wrapper .nav {
+         background-color: rgb(203, 117, 230);
+         height: 30px; width: 100%;
+      }
+      .aside {
+         background-color: rgb(255, 162, 255);
+         height: 30vw; width: 30%;
+      }
+      .section {
+         background-color: rgb(255, 0, 128);
+         height: 30vw; width: 70%;
+      }
+      .wrapper {
+         border: 3px solid black;
+         width: calc(100%-6px);
+         margin: 2vw auto;
+         display: flex;
+         flex-flow: row wrap;
+      }
+   </style>
+</head>
+<body>
+   <div class="wrapper" id="container">
+      <div class="item header">header</div>
+      <div class="item nav">nav</div>
+      <div class="item aside">aside</div>
+      <div class="item section">section</div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+h1 {
+   font-family: '평창 평화체', '나눔고딕', 돋움, sans-serif;
+   font-size: 45px;
+   text-align: center;
+   background-color: orange;
+   color: honeydew;
+}
+
+body {
+   font-family: '나눔스퀘어라운드', '나눔고딕', 돋움, sans-serif;
+}
+
+section#one {
+   text-align: center;
+   background-color: beige;
+   font-size: 15px;
+}
+
+a:link {
+   font-size: 20px;
+   background-color: yellowgreen;
+   color: rgb(255, 237, 199);
+}
+
+a:hover {
+   background-color: aliceblue;
+   color: darkblue;
+}
+
+a:active {
+   background-color: aliceblue;
+   color: palevioletred;
+}
+
+section#two {
+   background-color: khaki;
+   font-size: 15px;
+   line-height: 1.3em;
+}
+
+ul > li.season {
+background-color: rgb(255, 244, 236);
+}
+
+ul {
+   line-height: 1.5em;
+}
+
+h2 {
+   text-decoration: underline;
+   text-align: center;
+   color: #ff6551
+}
+
+h2#one {
+   font-size: 20px;
+}
+
+div.memo {
+   font-size: 12px;
+   color: red;
+}
+
+h3 {
+   text-align: right;
+   background-color: coral;
+}
+
+h2#info {
+   text-align: left;
+   color: black;
+   text-decoration: none;
+   font-size: 18px;
+}
+
+ol {
+   line-height: 1.5em;
+}

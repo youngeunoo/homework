@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <title>flexEx5</title>
+   <style>
+      body { text-align: center; font-weight: bold;}
+      .form {
+         border: 3px solid black;
+         height: 600px;
+      }
+      form {
+         display: flex;
+         flex-flow: row nowrap;
+         justify-content: center;
+      }
+      .wrapper1 {
+         display: flex;
+         flex-flow: column wrap;
+         align-items: center;
+         height: 100%;
+         gap: 10px;
+         justify-items: center;
+         margin: 3px;
+      }
+      .wrapper2 {
+         display: flex;
+         flex-flow: column wrap;
+         align-items: center;
+         height: 100%;
+         gap: 10px;
+         justify-items: center;
+         margin: 3px;
+      }
+      .item {
+         background-color: aquamarine;
+         width: 110px;
+         display: flex;
+         justify-content: flex-end;
+         align-items: center;
+         text-align: right;
+         flex-wrap: wrap;
+      }
+      .item2 ~ .item {
+         width: 110px; height: 100px;
+      }
+      .box {
+         width: 200px;
+         display: flex;
+         flex-wrap: wrap;
+      }
+      .box2 ~ .box {
+       height: 100px;
+      }
+   </style>
+</head>
+<body>
+   <div class="form">
+      <h1>폼 타이틀 세로 중앙정렬</h1>
+ <form>
+      <div class="wrapper1">
+         <div class="item item1">채널 키워드</div>
+         <div class="item item2">채널 키워드</div>
+         <div class="item item3">channel keyword</div>
+         <div class="item item4">channel keyword 채널 키워드</div>
+         <div class="item item5">채널 키워드</div>
+      </div>
+      <div class="wrapper2">
+         <div class="box box1"><input type="text" placeholder="플렉스 적용하기"></div>
+         <div class="box box2"><input type="text" placeholder="플렉스 적용하기"></div>
+         <div class="box box3"><input type="text" placeholder="플렉스 적용하기"></div>
+         <div class="box box4"><input type="text" placeholder="플렉스 적용하기"></div>
+         <div class="box box5"><input type="text" placeholder="플렉스 적용하기"></div>
+      </div> 
+   </form>
+   </div>
+</body>
+</html>
