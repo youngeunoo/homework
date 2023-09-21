@@ -1,0 +1,86 @@
+@charset "utf-8";
+body{
+  font-family: 'gmarketsans', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  background: #3256 url(./halftone-yellow.png);
+}
+
+/**** container ****/
+.container {
+  border: 4px solid #eeb0b0;
+  width: 940px;
+  margin: 20px auto;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+/**** main ****/
+.container main {
+  display: flex;
+}
+.container main article {
+  background-color: #f1eee9;
+  /*width: 650px;*/
+  width: 7;
+  padding: 30px 20px;
+}
+.container main article .box {
+  display: flex;
+  margin-bottom: 40px;
+}
+.container main article .box figure {
+  background-color: #fff;
+  border: 1px solid red;
+  text-align: right;
+  color: #9c999c;
+  font-style: italic;
+  font-size: 14px;
+  padding: 8px;
+  margin-right: 20px;
+}
+.container main article .box figure figcaption {
+  margin-top: 8px;
+}
+.container main article .box .txt_wrapper {
+  width: 280px;
+}
+.container main article .box .txt_wrapper h2 {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.container main article .box .txt_wrapper h3 {
+  font-weight: 500;
+  margin: 5px 0;
+  color: red;
+}
+.container main aside {
+  /*width: 282px;*/
+  flex-grow: 3;
+}
+.container main aside h2 {
+  color: red;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 30px 20px;
+}
+.container main aside .recipe a {
+  font-size:1.4rem;
+  display: block;
+  border-bottom: 1px solid #e4010b;
+  padding: 20px 0 0 20px;
+}
+.container img {
+  width: 300px; height: 200px;
+  object-fit: cover;
+}
+.container main aside .recipe a:hover {
+  background: #e4010b;
+  color: #fff;
+}
+.container main aside address {
+  margin: 30px 20px;
+  font-weight: 500;
+}
