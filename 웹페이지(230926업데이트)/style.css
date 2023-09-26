@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+body {
+   background-color: antiquewhite;
+}
+
+/**** 헤더 ****/
+header { background-color: #27374D; }
+header h1 { background-color: #FACBEA; }
+header nav { background-color: #D988B9; }
+
+/**** 메인 ****/
+main { background-color: #526D82; }
+main .content1 { background-color: #7D5A5A; }
+main .content1 h2 { background-color: #D2E0FB; }
+main .content1 img { background-color: #F9F3CC; }
+
+main ol { background-color: #393646;}
+main ol li { background-color: #fff;}
+main ol li h3 {background-color: #D6E6F2;}
+
+main .content2 {background-color: #4F4557;}
+main .content2 h3 {background-color: #C3AED6;}
+main .content2 p {background-color: #FEFCF3;}
+main .content2 a {background-color: #FEFDCA;}
+
+main .content3 { background-color: #6D5D6E;}
+main .content3 h3 { background-color: #C9B6E4;}
+main .content3 p { background-color: #E1CCEC;}
+main .content3 a { background-color: #F1F1F6;}
+
+
+main .content4 { background-color: #443C68;}
+main .content4 h2 { background-color: #D3756B;}
+main .content4 > p { background-color: #F0997D;}
+main .content4 ul { background-color: #FFC3A1;}
+main .content4 ul h3 { background-color: #0C7B93;}
+main .content4 ul p { background-color: #00A8CC;}
+
+
+main .content5 { background-color: #635985;}
+main .content5 h2 { background-color: #FEFCF3;}
+main .content5 p { background-color: #F5EBE0;}
+main .content5 h3 { background-color: #F0DBDB;}
+main .content5 img { background-color: #DBA39A;}
+main .content5 button { background-color: #0A2647; color: white;}
+
+main .content6 { background-color: #393053;}
+main .content6 h2 { background-color: #526D82;}
+main .content6 p { background-color: #9DB2BF;}
+main .content6 video { background-color: #DDE6ED;}
+
+
+main .content7 { background-color: #18122B;}
+main .content7 a { background-color: #A9907E;}
+main .content7 ul { background-color: #F3DEBA;}
+main .content7 li { background-color: #ABC4AA;}
+main .content7 h3 { background-color: #EDE4E0;}
+main .content7 p { background-color: #F4EAD5;}
+
+main .content8 { background-color: #1A120B;}
+main .content8 p { background-color: #C4DFDF;}
+main .content8 table { background-color: #FFBB5C;}
+main .content8 a { background-color: #D2DE32;}
+main .content8 h3 { background-color: #EFD595;}
+/**** 푸터 ****/
+footer { background-color: #3C2A21; }
+footer h3 { background-color: #F1EFEF; }
+footer ul { background-color: #CCC8AA; }
+footer li { background-color: #7D7C7C; }
+footer p { background-color: #EBE4D1; }
+footer a { background-color: #9EDDFF; }
+footer h4 { background-color: #A6F6FF; }
+
+footer .info {
+   background-color: #d1d1d1;
+}
