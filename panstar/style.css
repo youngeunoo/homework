@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+/*** 폰트 ***/
+/*font-family: 'NanumSquareLight';
+font-family: 'NanumSquare';
+font-family: 'NanumSquareBold';
+font-family: 'NanumSquareExtraBold';
+font-family: 'NanumSquareAcb';
+font-family: 'NanumSquareAceb';
+font-family: 'NanumSquareAcl';
+font-family: 'NanumSquareAcr';*/
+
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600;700;800&display=swap');
+
+/* font-family: 'Play', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+body {margin: 0;}
+a {text-decoration: none; color: inherit;}
+h2, h3 {color: #121212;}
+
+/*** 헤더 ***/
+header {background-color: white; box-shadow: -5px 10px 15px -8px rgba(0, 0, 0, 0.18); display: flex; justify-content: space-between; align-items: center; height: 100px; padding: 5px; font-weight: bold; box-sizing: border-box; position: sticky; top: 0; font-family: 'NanumSquare', Arial, Helvetica, sans-serif; z-index: 2;}
+header a {flex-grow: 0;}
+header a img {height: 35px; margin-left: 30px;}
+
+header menu {list-style: none; padding: 0; display: flex; height: 100%; justify-content: center; align-items: center; flex-grow: 8; margin: 0; font-size: 1.1rem; position: relative;}
+header menu li {margin: 2vw;}
+header menu li a {transition: 0.3s;}
+header menu li a:hover {color: #F5821F;}
+header menu ul {display: none;}
+
+
+header .box {display: flex; flex-wrap: wrap; height: 100%; align-items: center; flex-grow: 1; justify-content: space-evenly; font-size: 0.85rem;} 
+header .box a {padding: 7px 10px;}
+header .box a:first-of-type {color: white; background-color: #F5821F; border-radius: 30px; display: flex; justify-content: space-evenly; align-items: center; width: 105px;}
+
+/*** 메인 ***/
+main {color: #666666;}
+main .title {height: 90vh; background: url(./images/mb_cargo.png) no-repeat 100% / cover; color: white; font-style: italic; text-transform: uppercase; padding: 0 200px 10vh 200px; box-sizing: border-box; position: relative; margin-bottom: 100px; display: flex; flex-flow: column; justify-content: center;}
+main .title h2 {font-size: 3.5rem; margin: 0; text-shadow:2px 1.2px 0px rgba(0, 0, 0, 0.5); letter-spacing: -2.5px; font-weight: 400; height: 65px;}
+main .title h1 {font-size: 4.5rem; margin: 0 0 20px -30px; text-shadow:2px 1.2px 0px rgba(0, 0, 0, 0.5); letter-spacing: -2px; height: 85px; font-weight: bold;}
+main .title p { font-family: Arial, Helvetica, sans-serif; letter-spacing: -1px; font-weight: 600; padding: 0; margin: 0;}
+main .title p:first-of-type {margin-left: 5px;}
+main .title .rsv {position: absolute; top: 30vh; right: 30px;}
+main .title .rsv a {display: block; font-style: normal; background-color: rgba(0, 0, 0, 0.5); width: 100px; height: 100px; border-radius: 50%; font-size: 0.85rem; text-align: center; padding-top: 15px; box-sizing: border-box; margin-top: 15px;}
+main .title .rsv a p {margin: 0; padding: 5px; line-height: 1.3;}
+main .title .rsv a:hover {background-image: url(./images/main_reserve_ov_bg.png);}
+
+main .info1 {text-align: center; font-family: 'Noto Sans KR', sans-serif; height: 650px;}
+main .info1::before {content: "/"; color: #F5821F; font-size: 1.4rem; font-weight: bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+main .info1 h2 {font-family: 'Play', sans-serif; font-size: 2.8rem; letter-spacing: -1.5px; margin: 15px;}
+main .info1 p {font-size: 1rem; letter-spacing: -0.5px;}
+main .info1 ul {list-style: none; padding: 0; display: flex; justify-content: center; margin-top: 100px;}
+main .info1 ul li {width: 21%; padding-bottom: 50px;}
+main .info1 ul li h3 {font-size: 4rem; font-family: 'Play', sans-serif; text-transform: uppercase; letter-spacing: -1.2px; position: relative; margin: 30px 0;}
+main .info1 ul li h3 span {font-size: 1rem; font-weight: 400;}
+main .info1 ul li h3::after {content: ""; width: 25px; height: 1px; background-color: black; position: absolute; top: 85px; left: 185px;}
+main .info1 ul li p:first-of-type {color: #232C69; font-size: 1.2rem; margin: 0;}
+main .info1 ul li p:last-of-type {margin: 0;  text-transform: uppercase; font-size: 0.95rem; font-weight: 200;}
+main .info1 ul li:nth-of-type(1) {border-right: 1px solid rgba(0,0,0,0.2);}
+main .info1 ul li:nth-of-type(2) {border-right: 1px solid rgba(0,0,0,0.2);}
+main .info1 ul li:nth-of-type(3) {border-right: 1px solid rgba(0,0,0,0.2);}
+
+main .info2 {text-align: center; font-family: 'Noto Sans KR', sans-serif; height: 800px; position: relative;}
+main .info2::before {content: "/"; color: #F5821F; font-size: 1.4rem; font-weight: bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+main .info2 h2 {font-family: 'Play', sans-serif; font-size: 2.8rem; letter-spacing: -1.5px; margin: 15px;}
+main .info2 p {font-size: 1rem; letter-spacing: -0.5px; margin-bottom: 100px;}
+main .info2 .box {background-color: #EEEEEE; width: 52%; height: 75%; box-sizing: border-box; padding-left: 100px;}
+main .info2 .box ul {list-style: none; display: flex; padding: 70px 0 0 0; justify-content: center;}
+main .info2 .box ul li {transition: 0.3s; margin: 0 10px; font-weight: 600; padding-top: 10px; border-top: transparent solid 3px;}
+main .info2 .box ul li:hover {color: #F5821F;}
+main .info2 .box ul li:focus {color: #F5821F; border: #F5821F solid 3px;}
+main .info2 .box h3 {margin: 40px 0 0 0; font-size: 2.3rem; font-weight: 600;}
+main .info2 .box p {font-size: 0.9rem; line-height: 1.7; margin: 0; padding: 40px;}
+main .info2 .box .img-box img {margin: 13px;}
+main .info2 .btn {position: absolute; top: 530px; left: 840px; z-index: 1; background-color: #F5821F; color: white; padding: 10px 40px; text-transform: capitalize; font-weight: 700; letter-spacing: -0.5px; transition: 0.3s;}
+main .info2 .btn:hover {border-radius: 30px;}
+main .info2 > img {position: absolute; top: 315px; right: 0;}
+
+
+main .schedule::before {content: "/"; color: #F5821F; font-size: 1.4rem; font-weight: bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+main .schedule {padding: 200px 10px; text-align: center;}
+main .schedule h2 {text-transform: capitalize; font-family: 'Play', sans-serif; font-size: 2.8rem; letter-spacing: -1.5px; margin: 15px;}
+main .schedule p {font-family: 'Noto Sans KR', sans-serif; font-size: 1.05rem;}
+
+main .schedule .box {background: url(./images/bg_worldmap.png) no-repeat 100%; height: 480px;}
+main .schedule .box ul {list-style: none; font-family: 'Play', sans-serif; color: #121212; font-weight: 600; text-transform: uppercase; display: flex; justify-content: center; margin: 30px auto; font-size: 1.1rem;}
+main .schedule .box ul li {margin: 0px 20px; transition: 0.2s;}
+main .schedule .box ul li:hover {color: #F5821F;}
+
+main .schedule .calendar-box {display: flex; align-items: center; margin: 50px 0;}
+main .schedule .calendar-box a {font-family: 'Play', sans-serif; font-size: 4rem; font-weight: 600; color: #CCCCCC; display: flex; align-items: center; transition: 0.2s;}
+main .schedule .calendar-box a svg {transition: 0.2s;}
+main .schedule .calendar-box a:hover {color: #666666;}
+main .schedule .calendar-box a:hover svg {fill: #666666;}
+
+main .schedule .calendar-box .table {background-color: #EEEEEE; font-family: 'Play', sans-serif; display: grid; border-radius: 20px; width: 90%; height: 350px; align-items: stretch; padding: 10px; box-sizing: border-box; padding: 15px 50px;}
+main .schedule .calendar-box .table h3 {font-size: 2.8rem; letter-spacing: -1.2px; margin: 20px 0 10px 0;}
+main .schedule .calendar-box .table p {color: #121212; font-weight: 600; text-transform: uppercase; font-family: 'Play', sans-serif; text-align: left; font-size: 0.95rem;margin-left: 50px; position: relative;}
+main .schedule .calendar-box .table .kor {margin-bottom: 40px;}
+main .schedule .calendar-box .table .kor p:nth-child(1)::before {content: ""; width: 15px; height: 3px; background-color: #FDBF08; position: absolute; top: 50%; left: -10%;}
+main .schedule .calendar-box .table .kor p:nth-child(2)::before {content: ""; width: 15px; height: 3px; background-color: #E737F7; position: absolute; top: 50%; left: -10%;}
+main .schedule .calendar-box .table .jpn p:nth-child(1)::before {content: ""; width: 15px; height: 3px; background-color: #292F9A; position: absolute; top: 50%; left: -10%;}
+main .schedule .calendar-box .table .jpn p:nth-child(2)::before {content: ""; width: 15px; height: 3px; background-color: #1FEA3D; position: absolute; top: 50%; left: -10%;}
+
+main .schedule .calendar-box .table table {grid-column: 2 / 4; grid-row: 1 / 6; margin: 0; border-collapse: collapse;}
+main .schedule .calendar-box .table table thead {height: 70px; border-bottom: #EEEEEE 4px solid;}
+main .schedule .calendar-box .table table tbody {color: #121212; font-weight: 600;}
+main .schedule .calendar-box .table table tr {margin: 0; padding: 0;}
+main .schedule .calendar-box .table table td:nth-child(even) {background-color: #F8F8F8;}
+main .schedule .calendar-box .table table td:nth-child(odd) {background-color: #FFFFFF;}
+main .schedule .calendar-box .table table td {margin: 0; padding: 0; width: 30px; position: relative;}
+main .schedule .calendar-box .table table td .busan {background-color: #FDBF08; width: 100%; height: 4px; position: absolute; top: 25px; left: 0;}
+main .schedule .calendar-box .table table td .masan {background-color: #E737F7; width: 100%; height: 4px; position: absolute; top: 50px; left: 0;}
+main .schedule .calendar-box .table table td .kanazawa {background-color: #292F9A; width: 100%; height: 4px; position: absolute; top: 155px; left: 0;}
+main .schedule .calendar-box .table table td .tsuruga {background-color: #1FEA3D; width: 100%; height: 4px; position: absolute; top: 180px; left: 0;}
+main .schedule .btn {background-color: #F5821F; color: white; text-transform: capitalize; font-weight: 800; font-size: 0.9rem; padding: 12px 40px; font-family: 'Noto Sans KR', sans-serif; transition: 0.3s;}
+main .schedule .btn:hover {border-radius: 30px; background-color: orange;}
+
+
+main .info3::before {content: "/"; color: #F5821F; font-size: 1.4rem; font-weight: bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+main .info3 {text-align: center; font-family: 'Noto Sans KR', sans-serif; width: 90%; height: 780px; margin: auto;}
+main .info3 h2 {text-transform: capitalize; font-family: 'Play', sans-serif; font-size: 2.8rem; letter-spacing: -1.5px; margin: 15px;}
+main .info3 p {font-size: 1.05rem; letter-spacing: -0.5px;}
+
+main .info3 .list {display: flex; justify-content: center; margin-top: 100px;}
+main .info3 .list .news {width: 40%; max-width: 600px; min-width: 390px;
+height: 410px; background: url(./images/people.jpg) no-repeat 100% / cover; background-color: rgba(0,0,0,0.5); background-blend-mode: multiply; color: white; transition: 0.2s;}
+main .info3 .list .news:hover {background-color: rgba(0,0,0,0.3);}
+main .info3 .list .news .name {background-color: #F5821F; width: 130px; height: 50px; line-height: 50px;}
+main .info3 .list .news h3 {color: white; font-size: 2.8rem;  margin: 30px 50px; letter-spacing: -1.2px;}
+main .info3 .list .news p {font-weight: bold; font-family: 'Play', sans-serif;}
+main .info3 .list .news .more {border: 1px white solid; width: 130px; height: 40px; line-height: 40px; font-weight: bold; margin: 0 auto;}
+
+main .info3 .list .notice {width: 40%; min-width: 400px; position: relative; margin: 0 50px;}
+main .info3 .list .notice h3 {font-family: 'Play', sans-serif; text-transform: capitalize; text-align: left; font-size: 2.5rem; margin-top: 10px;}
+main .info3 .list .notice > a {position: absolute; top: 0; right: 0; border: #CCCCCC solid 1px; padding: 9px 30px; color: #121212; font-size: 0.9rem; font-weight: bold; transition: 0.2s;}
+main .info3 .list .notice > a:hover {border-radius: 30px; border-color: #666666;}
+main .info3 .list .notice ul {padding: 0;}
+main .info3 .list .notice li::before {content: "-"; color: #121212; margin: 0 10px;}
+main .info3 .list .notice li {display: flex; border-bottom: #EEEEEE solid 1px; padding: 15px 0;}
+main .info3 .list .notice li a {height: 20px;}
+main .info3 .list .notice li a:hover {border-bottom: solid 1px #666666;}
+main .info3 .list .notice .date {position: absolute; right: 0; color: #CCCCCC; font-family: 'Play', sans-serif; font-weight: bold; display: flex; align-items: center;}
+main .info3 .list .notice .date svg {margin-right: 3px;}
+
+main .info3 .list .recruit {background: url(./images/recruit.png) no-repeat 100% / cover; width: 20%; position: relative;}
+main .info3 .list .recruit h4 {color: #F5821F; font-family: 'Play', sans-serif; text-transform: capitalize; text-align: left; font-size: 2.1rem; letter-spacing: -1px; margin: 20px 0 0 20px;}
+main .info3 .list .recruit p {text-align: left; color: #121212; margin: 0 20px;}
+main .info3 .list .recruit .more {background-color: #F5821F; color: white; width: 130px; height: 45px; line-height: 45px; font-size: 0.9rem; font-weight: bold; position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%); transition: 0.2s;}
+main .info3 .list .recruit .more:hover {border-radius: 30px; background-color: orange;}
+
+main .link {background-color: #EEEEEE; height: 100px; display: flex; justify-content: space-evenly; align-items: center;}
+
+
+footer {background-color: #2A2A2A; color: #979797; padding: 30px 130px; position: relative; height: 250px;}
+footer .contact {display: flex; width: 800px; flex-flow: wrap; font-size: 0.85rem; line-height: 2;}
+footer .contact address {margin-right: 25px; font-style: normal;}
+footer .copyright {color: #5B5B5B; font-size: 0.8rem; margin: 30px 0;}
+footer .link {position: absolute; top: 50px; right: 100px; font-size: 0.95rem;}
+footer .link a {margin: 0 10px; letter-spacing: -1px; display: inline-block; height: 18px;}
+footer .link a:hover {border-bottom: #979797 solid 1px;}
+
+footer .languege {position: relative;}
+footer .languege ul {list-style: none; padding: 0; margin: 0;}
+footer .languege .kor {background-color: transparent; border: none; color: #979797; cursor: pointer; font-weight: bold; letter-spacing: -0.8px; text-transform: uppercase; padding: 15px;}
+footer .languege:hover .listbox {display: block; position: absolute; top: 40px;}
+footer .languege .listbox .list:hover {background-color: #F5821F; color: white;}
+footer .languege .listbox {background-color: white; border: none; display: none;}
+footer .languege .listbox .list {background-color: white; border: none; cursor: pointer; text-transform: uppercase; padding: 10px 15px; width: 60px;}
+
+footer .select {display: flex; position: absolute; top: 130px; right: 120px;}
+footer .select #site {background-color: #1A1917; border: none; color: #979797; text-transform: capitalize; margin: 0 25px; cursor: pointer; font-size: 0.95rem; padding: 7px 20px; width: 200px; font-family: 'Noto Sans KR', sans-serif;}
