@@ -344,6 +344,9 @@ a.up:hover {
   left: 45%;
   transform: translateY(-50%);
 }
+.service .list-box {
+  display: none;
+}
 .service .img-box {
   width: 90%;
   margin: 0 auto;
