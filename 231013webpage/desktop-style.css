@@ -1,0 +1,439 @@
+@charset "utf-8";
+
+@media (width >= 960px) {
+  /*** 헤더 ***/
+  header {
+    height: 80px;
+  }
+  header h1 {
+    height: 100px;
+    width: 100px;
+  }
+  header .global-nav .menu-btn {
+    display: none;
+  }
+
+  header .global-nav menu {
+    display: flex;
+    flex-flow: row;
+    position: inherit;
+    height: 80px;
+    color: #212529;
+    font-size: 1.1rem;
+  }
+  header .global-nav menu li {
+    display: block;
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
+    transition: 0.3;
+  }
+  header .global-nav menu > li:hover {
+    background-color: #78b6da;
+    color: #fff;
+  }
+  header .global-nav menu li a {
+    display: block;
+    padding: 0 1vw;
+    height: 100%;
+    line-height: 80px;
+  }
+
+  /* 소메뉴 */
+  header .global-nav menu li ul {
+    padding: 0;
+    width: 200px;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #747474;
+    position: absolute;
+    opacity: 0;
+    top: 100px;
+  }
+
+  header .global-nav menu li ul li {
+    display: none;
+    height: auto;
+    background-color: #fff;
+    width: 230px;
+  }
+  header .global-nav menu li ul li a {
+    line-height: 0;
+    padding: 25px 15px;
+  }
+  header .global-nav menu li ul li a:hover {
+    background-color: #f3f3f3;
+    color: #78b6da;
+  }
+
+  header .global-nav menu li:hover ul {
+    opacity: 1;
+    transition: 0.3s;
+    transform: translateY(-20px);
+  }
+  header .global-nav menu li:hover ul li {
+    display: block;
+  }
+  header .global-nav menu li ul li:hover a {
+    transition: 0.3s;
+    padding-left: 20px;
+  }
+
+  /*** 메인 ***/
+  /* 섹션 1 */
+  .main-page {
+    text-align: left;
+    box-sizing: border-box;
+    padding: 130px 8vw;
+    background: url(./images/hero-bg.png) no-repeat 100% 70% / cover;
+    background-color: #ecebee;
+    background-blend-mode: multiply;
+  }
+  .main-page p {
+  }
+  .main-page h2 {
+    margin: 0;
+    font-size: 4.2rem;
+    width: 450px;
+  }
+  .main-page a {
+    margin: 50px 0;
+    transition: 0.3s;
+  }
+  .main-page a:hover {
+    background-color: #78b6da;
+    transform: scale(1.1);
+  }
+  .main-page .img-ani {
+    position: absolute;
+    top: 100px;
+    left: 50vw;
+    width: 45%;
+  }
+  .main-page .img-ani img {
+    width: 800px;
+  }
+  .main-page .img1 {
+    animation: imgd 10.5s normal infinite;
+    transform: translateX(2000px);
+  }
+  .main-page .img2 {
+    animation: imgd 10.5s 3.5s normal infinite;
+    transform: translateX(2000px);
+  }
+  .main-page .img3 {
+    animation: imgd 10.5s 7s normal infinite;
+    transform: translateX(2000px);
+  }
+  .main-page .page-list {
+    top: 900px;
+    left: 70vw;
+  }
+
+  /* 섹션 2 */
+  .list {
+  }
+  .list .info {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    padding: 6vw;
+  }
+  .list .info li {
+    padding: 50px;
+  }
+  .list .info li:nth-child(3) {
+    border-bottom: none;
+  }
+  .list .info li:nth-child(odd) {
+    border-right: 1px solid #ecebee;
+  }
+  .list .info li h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .list .info li p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  /* 섹션 3 */
+  .event {
+  }
+  .event .img {
+    display: grid;
+    gap: 0;
+  }
+  .event .img li:first-child {
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+  }
+  .event .img li:nth-child(2) {
+    grid-column: 3 / 4;
+  }
+  .event .img li:nth-child(3) {
+    grid-column: 4 / 5;
+  }
+  .event .img li:nth-child(4) {
+    grid-row: 2 / 3;
+    grid-column: 3 / 5;
+  }
+  .event .img li:nth-child(5) {
+    grid-row: 3 / 4;
+    grid-column: 3 / 5;
+  }
+  .event .img li:nth-child(6) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  .event .img li:nth-child(7) {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+  }
+
+  .event .img li .txt h3 {
+    font-size: 2rem;
+  }
+  .event .img li:hover .txt {
+    opacity: 100%;
+  }
+  .event .img li:hover .txt h3 {
+    opacity: 1;
+    top: 50%;
+  }
+  .event .img li .txt h3:hover {
+    color: #78b6da;
+    cursor: pointer;
+  }
+
+  /* 섹션 4 */
+  .business {
+    padding: 120px 0;
+  }
+  .business h3 {
+    font-size: 3.5rem;
+  }
+  .business h3::after {
+    top: 120px;
+    left: 49%;
+    transform: translateY(-50%);
+  }
+  .business ul {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    gap: 23px;
+  }
+  .business ul li {
+    height: 900px;
+    width: 100%;
+  }
+  .business ul li .txt-box h4 {
+    font-size: 1.6rem;
+    margin-top: 15px;
+  }
+  .business ul li .txt-box p {
+    font-size: 1.1rem;
+    padding: 5px 0;
+  }
+
+  /* 섹션 5 */
+  .youtube {
+    padding: 7vw;
+  }
+  .youtube .box {
+    display: flex;
+    margin-bottom: 50px;
+  }
+  .youtube .box h3 {
+    font-size: 3.2rem;
+    width: 50%;
+    padding: 30px;
+  }
+  .youtube .box p {
+    width: 50%;
+    font-size: 1.5rem;
+  }
+  .youtube .video .play {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+
+  /* 섹션 6 */
+  .service {
+    position: relative;
+    overflow: hidden;
+    height: 900px;
+  }
+  .service h3 {
+    font-size: 3rem;
+    margin-bottom: 130px;
+  }
+  .service h3::after {
+    position: absolute;
+    top: 100px;
+    left: 49%;
+  }
+  .service .img-box {
+    width: 445px;
+    position: absolute;
+    left: 705px;
+  }
+  .service .img-box .txt-box {
+    height: 190px;
+  }
+  .service .img-box h4 {
+    font-size: 1.5rem;
+  }
+  .service .img-box p {
+    font-size: 1.1rem;
+    color: #505050;
+  }
+  .service .list-box {
+    display: flex;
+    opacity: 0.3;
+    position: absolute;
+    top: 240px;
+    width: 150%;
+  }
+  .service .list-box .img-box {
+    width: 400px;
+    box-shadow: none;
+    margin: 0 40px;
+    position: absolute;
+  }
+  .service .list-box .img-box:nth-child(1) {
+    left: -280px;
+  }
+  .service .list-box .img-box:nth-child(2) {
+    left: 205px;
+  }
+  .service .list-box .img-box:nth-child(3) {
+    left: 1170px;
+  }
+  .service .list-box .img-box:nth-child(4) {
+    left: 1650px;
+  }
+  .service .list-box .img-box h4 {
+    font-size: 1.4rem;
+  }
+  .service .list-box .img-box p {
+    font-size: 1rem;
+  }
+  .service ul {
+    position: absolute;
+    top: 800px;
+    left: 890px;
+  }
+
+  /* 섹션 7 */
+  .client {
+    padding: 180px 100px;
+  }
+  .client ul {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+    row-gap: 30px;
+  }
+  .client ul li img {
+    width: 70%;
+  }
+  .client ul li img:hover {
+    filter: none;
+  }
+
+  /* 섹션 8 */
+
+  .location h3 {
+    font-size: 3.3rem;
+    padding: 140px 0 50px;
+  }
+
+  .location .map li {
+    margin-bottom: 30px;
+  }
+  .location .map li a {
+    font-size: 1.8rem;
+  }
+
+  .location .location-map {
+    width: 86%;
+  }
+  .location .tel {
+    font-size: 1.3rem;
+    padding: 0 7vw 180px;
+  }
+  .location .tel li {
+    display: flex;
+    align-items: center;
+  }
+  .location .tel li h4 {
+    margin: 0;
+    padding: 0;
+    width: 150px;
+  }
+  .location .tel li p {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* 섹션 9 */
+  .contact h3 {
+    font-size: 3.4rem;
+  }
+  .contact p {
+    font-size: 1.8rem;
+  }
+  .contact .ghost-btn {
+    transition: 0.3s;
+  }
+  .contact .ghost-btn:hover {
+    color: #212529;
+    background-color: #fff;
+  }
+
+  /*** 푸터 ***/
+  footer {
+    padding: 0;
+  }
+  footer .footer-wrapper {
+    padding: 30px 100px 50px;
+    display: flex;
+  }
+  footer .footer-wrapper h3 {
+    height: 100px;
+    width: 23%;
+    margin: 50px;
+  }
+  footer .footer-wrapper .address ul {
+    display: flex;
+  }
+  footer .footer-wrapper .address ul li {
+    width: 25vw;
+  }
+  footer .footer-wrapper .address ul li h4 {
+    font-weight: 600;
+  }
+  footer .footer-wrapper .address ul li p {
+    font-size: 1.1rem;
+    width: 250px;
+  }
+  footer .footer-wrapper .address ul li .social {
+    width: 200px;
+  }
+  footer .footer-wrapper .address ul li .social a:hover svg {
+    fill: #fff;
+    transition: 0.3s;
+  }
+
+  footer .copyright a {
+    padding-bottom: 5px;
+  }
+  footer .copyright a:hover {
+    border-bottom: #212529 solid 1px;
+  }
+  footer .copyright::after {
+    left: 49.8%;
+    transform: translateX(-50%);
+  }
+}

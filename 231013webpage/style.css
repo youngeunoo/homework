@@ -1,0 +1,556 @@
+@charset "utf-8";
+
+/* 'Noto Sans KR', sans-serif; */
+/* 'Montserrat', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800&family=Noto+Sans+KR:wght@200;400;500;700&display=swap");
+
+/*** common ***/
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  background: url(./images/img-bg.jpg) no-repeat fixed 50% / cover;
+}
+h3 {
+  color: #212529;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin: 10px 0;
+}
+.txt-box {
+  padding: 20px;
+  height: 30vw;
+  box-sizing: border-box;
+}
+/*** 헤더 ***/
+header {
+  background-color: white;
+  height: 60px;
+  display: flex;
+  box-shadow: 0px 1px #e9e9e9;
+  padding: 0 20px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  justify-content: space-between;
+}
+header h1 {
+  background: url(./images/logo.png) no-repeat 100% / contain;
+  height: 70px;
+  width: 70px;
+  text-indent: -9999px;
+}
+header .global-nav .menu-btn {
+  width: 20px;
+  height: 20px;
+  top: 8px;
+  padding: 10px;
+}
+header .global-nav menu {
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #666666;
+  padding: 0;
+}
+header .global-nav menu li {
+  display: none;
+  padding: 15px 5px;
+  border-bottom: 1px solid #e9e9e9;
+}
+header .global-nav menu li:last-child {
+  border-bottom: none;
+}
+header .global-nav menu li:hover {
+  color: #78b6da;
+}
+
+/*** 메인 ***/
+
+/* up버튼 */
+a.up {
+  position: fixed;
+  display: grid;
+  place-content: center;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: 0.2s;
+}
+a.up:hover {
+  background-color: #69b0da;
+}
+
+/* 섹션1 */
+.main-page {
+  height: 100vh;
+  min-height: 800px;
+  background: url(./images/hero-bg.png) no-repeat 50% / cover;
+  background-color: #ecebee;
+  background-blend-mode: multiply;
+  text-align: center;
+  line-height: 1.4;
+
+  animation: bgc 10.5s infinite;
+}
+.main-page p {
+  font-weight: 400;
+  color: #838383;
+  letter-spacing: 5px;
+  padding: 70px 0 20px;
+}
+.main-page h2 {
+  width: 300px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+  font-size: 2.8rem;
+  font-weight: 200;
+}
+.main-page a {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto;
+  color: white;
+  display: grid;
+  place-content: center;
+  margin-top: 20px;
+}
+.main-page .img-ani {
+  width: 80%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+.main-page .img-ani img {
+  position: absolute;
+  width: 430px;
+}
+.main-page .img1 {
+  animation: img 10.5s normal infinite;
+  transform: translateX(2000px);
+}
+.main-page .img2 {
+  animation: img 10.5s 3.5s normal infinite;
+  transform: translateX(2000px);
+}
+.main-page .img3 {
+  animation: img 10.5s 7s normal infinite;
+  transform: translateX(2000px);
+}
+.main-page .page-list {
+  position: absolute;
+  display: flex;
+  top: 95vh;
+  left: 44%;
+  transform: translateY(-50%);
+}
+.main-page .page-list a {
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.4);
+  padding: 5px;
+}
+.main-page .page-list .one {
+  animation: page 10.5s infinite;
+}
+.main-page .page-list .two {
+  animation: page 10.5s 3.5s infinite;
+}
+.main-page .page-list .three {
+  animation: page 10.5s 7s infinite;
+}
+
+/* 섹션2 */
+.list {
+  background-color: #fcfcfc;
+  color: #212529;
+}
+.list .info {
+  padding: 8vw;
+}
+.list .info li {
+  border-bottom: #ecebee solid 1px;
+  padding: 4vw;
+}
+.list .info li:last-child {
+  border-bottom: none;
+}
+.list .info li h3 {
+  font-size: 1.4rem;
+}
+.list .info li p {
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 5vw 2vw;
+}
+
+/* 섹션 3 */
+.event {
+  background-color: #fcfcfc;
+  margin: 0;
+}
+.event .img {
+  display: flex;
+  flex-flow: column;
+  gap: 8px;
+}
+.event .img li {
+  position: relative;
+  margin: 0;
+}
+.event .img li img {
+  width: 100%;
+}
+.event .img li .txt {
+  background-color: rgba(250, 250, 250, 0.7);
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+  opacity: 0;
+}
+.event .img li .txt h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  opacity: 0;
+  transition: 0.5s;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* .event .img li:hover .txt {
+  opacity: 100%;
+}
+.event .img li:hover .txt h3 {
+  opacity: 1;
+  top: 50%;
+}
+.event .img li .txt h3:hover {
+  color: #78b6da;
+  cursor: pointer;
+} */
+
+/* 섹션 4 */
+.business {
+  background-color: #fcfcfc;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.business h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  padding: 40px 0 50px;
+  position: relative;
+  margin: 0;
+}
+.business h3::after {
+  content: "";
+  background-color: #212529;
+  width: 45px;
+  height: 1.2px;
+  position: absolute;
+  top: 105px;
+  left: 45%;
+  transform: translateY(-50%);
+}
+.business > p {
+  font-weight: 300;
+  width: 80%;
+  margin: 0 auto 90px;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+.business ul li {
+  margin: 0 auto;
+  width: 85%;
+}
+.business ul li img {
+  width: 100%;
+}
+.business ul li .txt-box h4 {
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin: 10px 0 5px;
+}
+.business ul li .txt-box p {
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+/* 섹션 5 */
+.youtube {
+  background-color: #f6f6f7;
+  padding: 50px 50px;
+}
+.youtube .box h3 {
+  font-size: 2.2rem;
+}
+.youtube .box p {
+  font-weight: 300;
+  line-height: 1.4;
+  margin: 30px 0;
+}
+.youtube .video .play {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+/* 섹션 6 */
+.service {
+  padding: 30px 0;
+  background-color: #fcfcfc;
+}
+.service h3 {
+  position: relative;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 100px;
+}
+.service h3::after {
+  content: "";
+  background-color: #212529;
+  width: 50px;
+  height: 2.8px;
+  position: absolute;
+  top: 80px;
+  left: 45%;
+  transform: translateY(-50%);
+}
+.service .img-box {
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+.service .img-box .txt-box {
+  height: 35vw;
+  padding: 30px;
+}
+.service .img-box img {
+  width: 100%;
+}
+.service .img-box h4 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.service .img-box p {
+  font-weight: 400;
+  line-height: 1.7;
+  margin-top: 15px;
+  color: #838383;
+}
+
+.service ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.service ul li {
+  margin: 2px;
+}
+.service ul li a span {
+  font-size: 11px;
+  color: #c0def0;
+  transition: 0.3s;
+}
+.service ul li a.active span {
+  color: #69b0da;
+}
+
+/* 섹션 7 */
+.client {
+  background-color: #f6f6f7;
+  padding: 50px 30px;
+}
+.client ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  place-items: center;
+  row-gap: 7vw;
+}
+.client ul li img {
+  filter: grayscale(100%) contrast(10%);
+  width: 100px;
+  transition: 0.4s;
+}
+
+/* 섹션 8 */
+.location {
+  background-color: #fcfcfc;
+}
+.location h3 {
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 30px;
+  margin: 0;
+}
+.location .map {
+  text-transform: uppercase;
+  display: flex;
+  font-weight: 600;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+.location .map li {
+  width: 43%;
+  border-bottom: 1px solid #dbdbdb;
+}
+.location .map li a {
+  display: block;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+.location .map li a.active {
+  border-bottom: #212529 solid 3px;
+}
+.location .location-map {
+  height: 300px;
+  width: 90%;
+  margin: 20px auto;
+}
+.location .tel {
+  padding: 50px 7vw 100px;
+}
+.location .tel li {
+  border-bottom: #dbdbdb solid 1px;
+  padding: 20px 0;
+}
+.location .tel li:last-child {
+  border-bottom: #212529 solid 1px;
+}
+.location .tel li h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.location .tel li p {
+  font-weight: 400;
+  line-height: 1.3;
+  margin-top: 5px;
+}
+
+/* 섹션 9 */
+.contact {
+  background-color: rgba(114, 173, 207, 0.849);
+  color: rgba(250, 250, 250, 0.9);
+  text-align: center;
+  padding: 10vw 10vw;
+}
+.contact h3 {
+  text-transform: none;
+  color: rgba(250, 250, 250, 0.9);
+  margin: 0;
+  font-size: 2rem;
+}
+.contact p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  margin: 20px 0 40px;
+}
+.contact .ghost-btn {
+  display: block;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  border: 2px white solid;
+  width: 190px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+/*** 푸터 ***/
+footer {
+  background-color: #f6f6f7;
+  padding-top: 100px;
+}
+footer .footer-wrapper h3 {
+  margin: 0;
+  background: url(./images/logo@2x.png) no-repeat 3% / contain;
+  text-indent: -9999px;
+  height: 100px;
+}
+footer .footer-wrapper .address {
+  padding: 10px;
+}
+footer .footer-wrapper .address ul {
+  padding-bottom: 40px;
+}
+footer .footer-wrapper .address ul li {
+  font-size: 0.95rem;
+  width: 200px;
+}
+footer .footer-wrapper .address ul li h4 {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 30px 0;
+}
+footer .footer-wrapper .address ul li p {
+  font-weight: 400;
+  line-height: 1.6;
+}
+footer .footer-wrapper .address ul li .social {
+  display: flex;
+}
+footer .footer-wrapper .address ul li .social a {
+  padding: 5px;
+}
+footer .footer-wrapper .address ul li .social svg {
+  fill: #555555;
+  height: 12px;
+}
+footer .copyright {
+  background-color: #e4e4e4;
+  text-align: center;
+  padding: 50px;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+footer .copyright p {
+  margin-bottom: 25px;
+}
+footer .copyright a:first-of-type {
+  margin-right: 20px;
+}
+footer .copyright::after {
+  content: "/";
+  position: absolute;
+  left: 49.5%;
+  transform: translateX(-50%);
+}
